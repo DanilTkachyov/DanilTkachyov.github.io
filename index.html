@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+        <title>Задание 1</title>
+	</head>
+    <body>
+        <ol>
+            <li><a href="http://example.com">абсолютная гиперссылка на главную страницу;</a></li>
+            <li><a href="https://example.com">абсолютная в прооколе https;</a></li>
+            <li><a href="ftp://example.com/word.txt">на файл на сервере FTP без авторизации;</a></li>
+            <li><a href="ftp://user:danil@kubsu.ru/text.txt">на файл на сервере FTP с авторизации;</a></li>
+            <li><a href="https://www.universe.com/solarsystem#planets">на фрагмент страницы некоторого сайта;</a></li>
+            <li><a href="https://example.com/relatives#mother">на фрагмент текущей страницы;</a></li>
+            <li><a href="http://example.com?relatives=20&brothers=3">с двумя параметрами в URL;</a></li>
+            <li>
+                <ul>
+                    <li><a href="http://family.ru"title="Всё о кровном родстве">Всё о семье;</a></li>
+                    <li><a href="http://family.ru/kids"title="Дети">Дети;</a></li>
+                </ul>
+            </li>
+            <li><a>ссылка без href;</a></li>
+            <li><a href>ссылка с пустым href;</a></li>
+            <li><a href="http://example.com" rel="nofollow">запрещен переход поисковикам;</a></li>
+            <li><a href="http://example.com" rel="noindex">запрещен для индексации поисковиками;</a></li>
+            <li><p><a href="http://exmaple.com">контекстная в тексте абзаца</a></p></li>
+
+            <li><a href="http://example.com"><img src="image.jpg" width="150" height="120" alt="Цветок"></a></li>
+            <li><img src="image.jpg" width="150" height="120" usemap="#flower" alt="Цветок"></li>
+
+            <li><a href="index.html">относительная ссылка в текущем каталоге;</a></li>
+            <li><a href="about/project.html">относительная ссылка в каталоге about;</a></li>
+            <li><a href="../project.html">относительная ссылка в каталоге уровнем выше; </a></li>
+            <li><a href="../../project.html">относительная ссылка в каталоге двумя уровнями выше;</a></li>
+            <li><a href="/home">сокращенная ссылка на главную;</a></li>
+            <li><a href="/about">сокращенная ссылка на внутреннюю;</a></li>
+        </ol>
+          <map name="flower">
+            <area shape="rect" coords="20,80,140,200" href="http://example.com" alt="ссылка"/>
+            <area shape="circle" coords="60,50,10" href="http://example.com" alt="ссылка"/>
+            </map>
+         <form action="/"
+               method="POST">
+            <label>
+                ФИО:<br/>
+                <input name="field-name-1" value="Введите ФИО"/>
+            </label><br/>
+            <label>
+                Email:<br/>
+                <input name="field-email" value="example@example.com" type="email"/>
+            </label><br>
+            <label>
+                Дата рождения:<br/>
+                <input name="field-date" value="1990-01-01" type="date"/> 
+            </label><br/>
+            Пол:<br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="Male"/>
+                Мужской
+            </label><br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="Female"/>
+                Женский
+            </label><br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="not selected"/>
+                Не выбрано
+            </label><br/>
+            Количество конечностей:
+            <br/>
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="4"/>
+                4
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="3"/>
+                3 
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="2"/>
+                2 
+            </label><br/>  
+               <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="1"/>
+                1 
+            </label><br/>
+            <label>
+                Сверхспособности:<br/>
+                <select name="superpower"
+                 multiple="multiple">
+                    <option value="immortal" selected="selected">Бессмертие</option>
+                    <option value="walls">Прохождение сквозь стены</option>
+                    <option value="levitation">Левитация</option>
+                </select></label><br/>
+            <label>
+                Биография
+                <br/>
+                <textarea name="about">Расскажите о себе</textarea>
+            </label><br/>
+            <label>
+                С контрактом ознакомлен(а)
+                <input type="checkbox" checked="checked" name="check-1"/>
+            </label>
+            <br>
+            <input type="submit" value="Отправить" />
+        </form>
+    </body>
+</html>
